@@ -31,6 +31,7 @@ const config = {
   projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -89,49 +90,45 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
+        {
+          type: 'doc',
+          docId: 'introduction', // Points to introduction.md
+          position: 'left',
+          label: 'Survival Guide',
+        },
+        // {to: '/blog', label: 'Blog', position: 'left'}, // Commented out/Deleted
+        {
+          href: 'https://github.com/frums9/uplb-survival-guide',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
       },
       footer: {
         style: 'dark',
         links: [
+        {
+          title: 'Guide',
+          items: [
+            {
+              label: 'Start Here',
+              to: '/docs/introduction',
+            },
+            {
+              label: 'Food Hacks',
+              to: '/docs/02-Food/intro',
+            },
+          ],
+        },
           {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/introduction',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
-            ],
-          },
+          title: 'Community',
+          items: [
+            {
+              label: 'GitHub',
+              href: 'https://github.com/YOUR-USERNAME/uplb-survival-guide',
+            },
+          ],
+        },
           {
             title: 'More',
             items: [
