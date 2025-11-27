@@ -3,6 +3,12 @@ title: Under ₱50
 sidebar_position: 1
 ---
 
+:::note PLEASE READ
+Prices will always be subject to change depending on each individual food establishment. Please carry extra money if possible.
+:::
+
+***Last Updated: November 27, 2025***
+
 # Under ₱50 Student Meals
 *For when you have one coin or one purple bill.*
 
